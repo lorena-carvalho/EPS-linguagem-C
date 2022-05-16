@@ -1,52 +1,3 @@
-# EPS Llinguagem C
-
-## Descrição
-Exercícios de programação estruturada em linguagem C
-
-ep 1.0 - olá mundo!
-```
-#include <stdio.h>
-
-int main(void) {
-  printf("Olá mundo!\n");
-  return 0;
-}
-```
-
-ep 1.1 - estatísticas (menor, maior, média)
-```
-#include <stdio.h>
-
-int  main(void){
-  int n,i;
-  float numero, soma=0, menor = 999, maior = -2, media;
-
-  scanf("%d",&n);
-
-  for(i=0;i<n;i++){
-    scanf("%float", &numero);
-    soma = soma + numero;
-
-    if (numero > maior){
-      maior = numero;
-    }
-    if (numero < menor){
-      menor = numero;
-    }   
-  }
-
-  media = soma/n;
-
-  printf("Menor: %.2f\n",menor);
-  printf("Maior: %.2f\n",maior);
-  printf("Média: %.2f\n",media);
-  
-  return 0;
-}
-```
-
-ep 1.3. - menu de operações
-```
 #include <stdio.h>
 
 int main(void){
@@ -99,4 +50,3 @@ int main(void){
       
   return 0;
 }
-```
