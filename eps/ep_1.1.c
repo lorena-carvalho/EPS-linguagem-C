@@ -13,6 +13,7 @@ int  main(void){
     if (numero > maior){
       maior = numero;
     }
+    
     if (numero < menor){
       menor = numero;
     }   
