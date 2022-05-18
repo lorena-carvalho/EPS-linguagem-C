@@ -3,7 +3,7 @@
 ## Descrição
 Exercícios de programação estruturada em linguagem C
 
-EP 1.0 - olá mundo!
+EP 1.0 - Olá mundo!
 ```
 #include <stdio.h>
 
@@ -13,7 +13,7 @@ int main(void) {
 }
 ```
 
-EP 1.1 - estatísticas (menor, maior, média)
+EP 1.1 - Estatísticas (menor, maior, média)
 ```
 #include <stdio.h>
 
@@ -45,7 +45,7 @@ int  main(void){
 }
 ```
 
-EP 1.3. - menu de operações
+EP 1.3. - Menu de operações
 ```
 #include <stdio.h>
 
@@ -101,7 +101,7 @@ int main(void){
 }
 ```
 
-EP 1.3 - conta números primos
+EP 1.3 - Conta números primos
 ```
 #include <stdio.h>
 
@@ -129,5 +129,32 @@ int main(void) {
   printf("%d\n",cont);
 	
 	return 0;
+}
+```
+
+EP 1.4 - Ordem crescente
+```
+#include <stdio.h>
+ 
+int main(){
+  int n,i,num,ant,crescente = 1;
+  
+  scanf("%d",&n);
+ 
+  scanf("%d",&ant);
+  i = 2;
+  while(i <= n && crescente){
+    scanf("%d",&num);
+    if(num <= ant)
+      crescente = 0;
+    ant = num;
+    i = i + 1;
+  }
+  if(crescente)
+    printf("SIM\n");
+  else
+    printf("NAO\n");
+ 
+  return 0;
 }
 ```
